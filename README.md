@@ -41,27 +41,28 @@ CI=true dive <your-image>
 
 **按层分开显式Docker镜像的内容**
 
-As you select a layer on the left, you are shown the contents of that layer combined with all previous layers on the right. Also, you can fully explore the file tree with the arrow keys.
+当你在左边选择一层，你会看到那一层和所有前面的层一起的内容出现在右边。而且，你可以用箭头剑详细参考文件目录树。
 
-**Indicate what's changed in each layer**
+**显示每一层修改了什么**
 
-Files that have changed, been modified, added, or removed are indicated in the file tree. This can be adjusted to show changes for a specific layer, or aggregated changes up to this layer.
+更改、修改、添加或移除的文件会显示在文件树种。这可以调节为显示特定层，或到这一层来的聚集变更。
 
-**Estimate "image efficiency"**
+**估算“镜像效率”**
 
-The lower left pane shows basic layer info and an experimental metric that will guess how much wasted space your image contains. This might be from duplicating files across layers, moving files across layers, or not fully removing files. Both a percentage "score" and total wasted file space is provided.
+左下框显示基本的层信息和一个实验性指标，它会猜测你的镜像包含了多少浪费的空间。这可能来自不同层的重复文件，层之间的文件移动，或未完全移除的文件。提供了一个百分比“分数”和总共浪费的文件空间。
 
-**Quick build/analysis cycles**
+**快速构建/分析周期**
 
-You can build a Docker image and do an immediate analysis with one command:
+你可以使用以下命令创建一个Docker镜像然后紧接着就分析它。
 `dive build -t some-tag .`
 
-You only need to replace your `docker build` command with the same `dive build`
-command.
+你只需用 `dive build` 命令替换你的 `docker build` 命令。
 
-**CI Integration**
 
-Analyze an image and get a pass/fail result based on the image efficiency and wasted space. Simply set `CI=true` in the environment when invoking any valid dive command.
+**CI 集成**
+
+
+对一个镜像的分析会基于镜像效率及浪费的空间得到 pass/fail 结果。在调用有效的dive命令时只需在环境中设置 `CI=true`。
 
 **Multiple Image Sources and Container Engines Supported**
 
