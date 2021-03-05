@@ -3,7 +3,7 @@
 [![Pipeline Status](https://circleci.com/gh/wagoodman/dive.svg?style=svg)](https://circleci.com/gh/wagoodman/dive)
 [![Donate](https://img.shields.io/badge/Donate-PayPal-green.svg?style=flat)](https://www.paypal.me/wagoodman)
 
-**A tool for exploring a docker image, layer contents, and discovering ways to shrink the size of your Docker/OCI image.**
+**一个用于查看docker镜像，层内容，并发现缩小你的Docker/OCI镜像方式的工具。**
 
 ![Image](.data/demo.gif)
 
