@@ -7,17 +7,17 @@
 
 ![Image](.data/demo.gif)
 
-To analyze a Docker image simply run dive with an image tag/id/digest:
+要分析一个Docker镜像只需运行dive和提供镜像的tag/id/摘要：
 ```bash
-dive <your-image-tag>
+dive <你的镜像tag>
 ```
 
-or if you want to build your image then jump straight into analyzing it:
+或者说你想构建你的镜像紧接着就进行分析：
 ```bash
-dive build -t <some-tag> .
+dive build -t <某些tag> .
 ```
 
-Building on Macbook (supporting only the Docker container engine)
+在Macbook构建 (只支持Docker容器引擎)
 
 ```bash
 docker run --rm -it \
