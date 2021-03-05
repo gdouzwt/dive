@@ -28,18 +28,18 @@ docker run --rm -it \
       wagoodman/dive:latest build -t <some-tag> .
 ```
 
-Additionally you can run this in your CI pipeline to ensure you're keeping wasted space to a minimum (this skips the UI):
+另外你可以在你的持续集成管道运行这个以确保你让浪费的空间保持到最小（这里跳过了UI部分）：
 ```
 CI=true dive <your-image>
 ```
 
 ![Image](.data/demo-ci.png)
 
-**This is beta quality!** *Feel free to submit an issue if you want a new feature or find a bug :)*
+**这还是测试版！** *如果你想要新特性或找到bug了，随意提issue:)*
 
-## Basic Features
+## 基本功能
 
-**Show Docker image contents broken down by layer**
+**按层分开显式Docker镜像的内容**
 
 As you select a layer on the left, you are shown the contents of that layer combined with all previous layers on the right. Also, you can fully explore the file tree with the arrow keys.
 
